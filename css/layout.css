@@ -1,0 +1,100 @@
+/*
+reset trinh duyet
+comment cua css
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* common CSS*/
+div.container{
+	width: 980px;
+	margin: auto;
+}
+h1,h3{
+	text-align: center;
+}
+/* end common CSS*/
+
+/* CSS header */
+header.header {
+	width: 100%;
+	min-height: 100px;
+}
+header.header div.logo{
+	width: 30%;
+	height: 100px;
+	float: left;
+	background-color: green;
+}
+header.header div.banner {
+	width: 70%;
+	height: 100px;
+	float: left;
+	background-color: pink;
+}
+/* end CSS header */
+/* css Nav */
+nav{
+	width: 100%;
+	min-height: 40px;
+	background-color: black;
+}
+nav ul {
+	text-align: center;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0px 15px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+/* end css Nav */
+/* css main */
+main{
+	width: 100%;
+	min-height: 800px;
+}
+/* end css main*/
+main section.content-left{
+	width: 70%;
+	height: 100%;
+	float: left;
+	background-color: yellow;
+}
+main section.content-left section.content{
+	width: 100%;
+	min-height: 500px;
+	background-color: blue;
+}
+main section.content-left article{
+	width: 100%;
+	min-height: 300px;
+	background-color: violet;
+}
+main aside{
+	width: 30%;
+	float: left;
+	background-color: yellow;
+	height: 800px;
+}
+/* end css main */
+/* css footer */
+footer{
+	width: 100%;
+	height: 200px;
+	background-color: black;
+}
+footer h3 {
+	color: white;
+	padding: 50px 0px;
+}
+/* end css footer */
+

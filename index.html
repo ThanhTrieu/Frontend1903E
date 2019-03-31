@@ -122,6 +122,73 @@
 	</table>
 	<!-- ./html bang bieu du lieu -->
 
+	<!--HTML media -->
+	<br/>
+	<img src="images/test.jpg" alt="lphp1903E" width="100" height="100" title="lphp1903E">
+	<br/>
+	<!-- play file audio -->
+	<audio src="audio/horse.mp3" autobuffer autoloop loop controls></audio>
+	<br/>
+	<!-- paly file video -->
+	<video src="video/mov_bbb.mp4" autobuffer autoloop loop controls poster="images/test.jpg"></video>
+	<!-- html do hoa -->
+	<br/>
+	<canvas id="myCanvas"></canvas>
+	<!-- the canvas se khong lam viec mot minh dc ma can su ho tro boi javascript -->
+	<br/>
+	<!-- chen noi dung cua 1 trang web khac vao -->
+	<iframe border="0" width="980" height="500" src="https://www.24h.com.vn"></iframe>
+	<!-- ./html media -->
+	<br />
+
+	<!-- HTML Form -->
+	<form action="server/home.php" method="GET/POST">
+		<!-- giup co the chia se thong tin - tai lieu giua cac trang web voi nhau -->
+		<!-- cac the HTML di kem voi FORM -->
+		<input type="text" name="username" id="username" class="username" value="admin">
+		<br/>
+		<input type="text" name="test" required maxlength="10" minlength="3">
+		<br>
+		<h6 name="text">ABC</h6>
+		<input type="number" name="myNumber" placeholder="vui long nhap so">
+		<br>
+		<input type="url" name="myUrl" readonly value="https://www.24h.com.vn">
+		<!-- chi chap nhan nguoi dung nhap vao la 1 URL -->
+		<br>
+		<input type="email" name="myEmail" disabled value="admin@gmail.com">
+		<!-- chi chap nhan nguoi dung nhap vao la 1 email -->
+		<br/>
+		<input type="color" name="color">
+		<br/>
+		<input type="date" name="myDate">
+		<br/>
+		<textarea rows="3" cols="50" name="textArea"></textarea>
+		<br/>
+		<input type="password" name="myPass">
+		<br>
+		<select name="chooseDate">
+			<option value="1">01</option>
+			<option value="2">02</option>
+			<option value="3">03</option>
+			<option value="4">04</option>
+		</select>
+		<br>
+		<label for="nam"> Nam</label>
+		<input type="radio" name="gender" value="1" id="nam">
+
+		<label for="nu"> Nu</label>
+		<input type="radio" name="gender" value="0" id="nu">
+		<br>
+
+		<label for="agree"> toi dong y voi dieu khoan</label>
+		<input type="checkbox" id="agree" name="agree" value="1">
+		<br>
+		<!-- tao 1 nut lenh de gui du lieu tu form di -->
+		<button type="submit" name="btnSubmit"> Submit Form</button>
+		<!-- xoa het du lieu da nhap trong form -->
+		<button type="reset" name="btnReset"> Reset data</button>
+	</form>
+	<!-- ./HTML Form -->
 
 </body>
 </html>
