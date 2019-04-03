@@ -1,0 +1,76 @@
+/*
+cu phap comment css
+*/
+/* Thong thuong dung de reset trinh duyet - loai bo cac co che hien thi mac dinh cua trinh duyet va dua ve mot mau chuan cung d*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/* ID selector*/
+/* #title {
+	color: red;
+} */
+
+/* HTML selectot*/
+h1.myTitle {
+	color: yellow;
+}
+
+/* class selector*/
+.myTitle {
+	color: blue;
+}
+
+/* Attribute selector */
+input[type='email'] {
+	border: 1px solid green;
+}
+
+input[type] {
+	border: 1px solid red;
+}
+
+input[name~='user']{
+	border: 1px solid violet;
+}
+input[class~='c']{
+	border: 1px solid orange;
+}
+input[class*='c']{
+	border: 1px solid blue;
+}
+
+a[href^='https']{
+	color: red;
+}
+a[href$='com']{
+	color: yellow;
+}
+a[class|='my']{
+	color: violet;
+}
+
+/* selector phan cap */
+div.box-1 + div.box-2 {
+	border: 1px solid red;
+	width: 300px;
+	height: 300px;
+}
+div.box-1 ~ div.box-2 {
+	border: 1px solid red;
+	width: 300px;
+	height: 300px;
+}
+div.box-1 ~ div.box-2 h3 {
+	color: orange;
+}
+/* gom nhom selector*/
+.a,.b,.c{
+	color: red;
+}
+
+
+
+
+
+
