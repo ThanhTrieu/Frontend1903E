@@ -1,0 +1,129 @@
+/*tac dong vao thanh phan con dau tien*/
+div.content :first-child {
+	color: red;
+}
+div.content :first-of-type{
+	color: blue;
+}
+
+div.content :last-child {
+	color: yellow;
+}
+div.content :last-of-type{
+	color: green;
+}
+
+div.content :nth-last-child(3) {
+	color: violet;
+}
+div.content :nth-last-of-type(3) {
+	color: pink;
+}
+div.content :nth-child(3) {
+	color: orange;
+}
+div.content :nth-of-type(3) {
+	color: gray;
+}
+div.box :only-child{
+	color: green;
+}
+div.box input[type='text']:focus {
+	width: 200px;
+	height: 50px;
+	border: 1px green solid;
+}
+div.box input[name='test']:checked {
+	width: 200px;
+	height: 200px;
+}
+
+div.box input[name='test']:checked ~ h2 {
+	color: blue;
+}
+
+div.links a:active {
+	color: yellow;
+}
+div.links a:visited{
+	color: red;
+}
+div.links a:link{
+	color: violet;
+}
+div.links a:hover{
+	color: orange;
+}
+div.links:hover{
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+div.elements p::first-letter {
+	color: red;
+}
+div.elements p::first-line {
+	color: green;
+}
+
+div.elements p::after{
+	/* content: 'LPHP1903E'; */
+	content: url('../images/icon.png');
+}
+/* boi den chon van ban*/
+div.elements p::selection{
+	color: blue;
+}
+div.elements p {
+	font-family: 'tahoma';
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	/* direction: rtl; */
+	letter-spacing: 10px;
+	word-spacing: 10px;
+	text-indent: 50px;
+}
+a {
+	text-decoration: none;
+}
+p {
+	/* text-decoration: overline; */
+	text-decoration: line-through;
+	text-transform: uppercase;
+}
+a {
+	text-transform: capitalize;
+}
+p {
+	text-shadow: black 10px 5px 10px;
+}
+
+div.elements {
+	width: 500px;
+	height: 500px;
+	border: 1px solid red;
+	/* background-image: url('../images/logo-web.png'); */
+	/* background-repeat: no-repeat; */
+	/* background-repeat: repeat-x; */
+	/* background-repeat:  repeat-y; */
+	/* background-position: bottom right; 
+	*/
+	/* background-position: center center; */
+	/* background-attachment: fixed; */
+	/* background-size: cover; */
+	/* background-size: 100px 10px; */
+	background: url('../images/logo-web.png') no-repeat center center scroll;
+	background-size: 100px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -68,6 +68,13 @@ div.box-1 ~ div.box-2 h3 {
 .a,.b,.c{
 	color: red;
 }
+/* tu seclector css bieu dien lại (cau truc) ma HTML*/
+
+div.content > div.content-1 + div.content-2 > div.content-3 ~ div.content-4 > div.content-5 input[class='abc'] {
+	border: 1px solid red;
+}
+
+
 
 
 
