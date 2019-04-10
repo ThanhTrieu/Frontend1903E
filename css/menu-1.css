@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-family: 'tahoma';
+}
+
+.container{
+	width: 980px;
+	margin: 20px auto;
+}
+.container nav{
+	width: 300px;
+	margin-left: 50px;
+}
+.container nav ul li{
+	list-style: none;
+}
+.container nav ul li a {
+	text-decoration: none;
+}
