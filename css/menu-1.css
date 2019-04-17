@@ -14,10 +14,44 @@ body{
 .container nav{
 	width: 300px;
 	margin-left: 50px;
+	background-color: #FFFF99;
+	padding: 5px 0px 5px 5px;
 }
 .container nav ul li{
 	list-style: none;
+	padding: 10px 0px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.container nav ul li:last-child{
+	border: none;
 }
 .container nav ul li a {
 	text-decoration: none;
 }
+.container nav ul li:hover{
+	background-color: black;
+}
+.container nav ul li:hover > a{
+	color: white;
+}
+
+/* CSS dropdown menu*/
+
+.container nav ul li ul.dropdown {
+	display: none;
+}
+/*hien thi menu khi hover */
+.container nav ul li ul.dropdown{
+	width: 300px;
+	background-color: #FFFF99;
+	padding: 0px 0px 0px 5px;
+	border-left: 1px solid #ccc;
+}
+.container nav ul li:hover > ul.dropdown {
+	display: block;
+	position: absolute;
+	left: 300px;
+	top: 0px;
+}
+

@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	font-family: 'tahoma';
+	font-size: 14px;
+}
+
+nav{
+	width: 100%;
+	height: 40px;
+	background-color: black;
+}
+nav ul {
+	text-align: center;
+}
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0px 15px;
+	position: relative;
+}
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+/* CSS Menu dropdown*/
+nav ul li ul.dropdown{
+	display: none;
+	width: 200px;
+	background-color: black;
+}
+nav ul li ul.dropdown li {
+	display: block;
+	position: relative;
+}
+nav ul li:hover ul.dropdown{
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	text-align: left;
+}
+
+nav ul li:hover ul.dropdown  li:hover{
+	background-color: gray;
+}
+
+nav ul li:hover ul.dropdown  li:hover a {
+	color: red;
+}
+/*menu*/
+nav ul li ul.dropdown li ul.dropdown-2{
+	display: none;
+	width: 200px;
+	background-color: black;
+}
+nav ul li ul.dropdown li:hover > ul.dropdown-2{
+	display: block;
+	position: absolute;
+	left: 200px;
+	top: 0px;
+}
+/*menu table*/
+nav ul li div.table-menu{
+	display: none;
+	width: 500px;
+	background-color: black;
+}
+nav ul li:hover div.table-menu{
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+}
+nav ul li:hover div.table-menu ul.table-menu-dropdown{
+	display: table-row;
+}
+nav ul li:hover div.table-menu ul.table-menu-dropdown li{
+	display: table-cell;
+}
+
+nav ul li.bgSearch{
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/spotlight.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
