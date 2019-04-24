@@ -92,3 +92,16 @@ nav ul li.bgSearch{
 	background-position: center center;
 
 }
+
+input[class='txtSearch'] {
+	width: 500px;
+	height: 30px;
+	border-radius: 5px;
+	position: relative;
+	right: 500px;
+	display: none;
+}
+nav ul li.bgSearch:hover input[class='txtSearch']
+{
+	display: block;
+}
