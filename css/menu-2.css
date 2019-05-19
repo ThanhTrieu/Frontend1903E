@@ -70,9 +70,11 @@ nav ul li div.table-menu{
 	display: none;
 	width: 500px;
 	background-color: black;
+	opacity: 0;
 }
 nav ul li:hover div.table-menu{
 	display: block;
+	opacity: 1;
 	position: absolute;
 	top: 40px;
 	left: 0px;

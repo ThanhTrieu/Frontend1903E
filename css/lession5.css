@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.box-1{
+	width: 200px;
+	height: 50px;
+	background-color: green;
+	transition: all 5s ease-in 0s;
+	animation: myAnimation 10s ease-in 0s infinite alternate;
+	position: relative;
+
+}
+div.box-2{
+	width: 300px;
+	height: 50px;
+	background-color: blue;
+	margin-top: 20px;
+	transition: all 5s ease-out 0s;
+	animation: myAnimation2 10s ease-out 0s infinite alternate;
+	position: relative;
+}
+
+div.box-1:hover, div.box-2:hover{
+	width: 1000px;
+}
+
+/* cu phap de thuc thi hanh dong cua animation*/
+@keyframes myAnimation {
+	from {
+		left: 0px;
+	}
+	to {
+		left: 800px;
+	}
+}
+/* @keyframes myAnimation2 {
+	from {
+		top: 0px;
+	}
+	to {
+		top: 800px;
+	}
+} */
+
+img{
+	transition: all 3s ease-in 0s;
+}
+
+img:hover{
+	/* width: 50%;
+	height: 50%; */
+	border-radius: 50%;
+}
