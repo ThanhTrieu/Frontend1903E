@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>demo js event</title>
+</head>
+<body>
+	<h1> JS Event b5</h1>
+	<button> go back</button>
+	<script type="text/javascript">
+		// bat su kien quay dung trang vua di toi (go back)
+		document.getElementsByTagName('button')[0].addEventListener('click', function(){
+			// quay ve
+			history.back();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ex JS</title>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="user">User</label>
+				<input type="text" name="user" id="user">
+				<p id="errorUser"></p>
+			</div>
+			<br><br>
+			<div class="form-group">
+				<label for="pass">Password</label>
+				<input type="password" name="pass" id="pass">
+				<p id="errorPass"></p>
+			</div>
+			<br><br>
+			<button type="button" name="btnLogin" id="btnLogin"> Login</button>
+		</form>
+	</div>
+	<script type="text/javascript">
+		// bat su kien login - kien tra xem nguoi bam nut login chua
+		document.getElementById('btnLogin').onclick = function(){
+			// lay du lieu tu input nguoi dung nhap vao
+			let username = document.getElementById('user');
+			let password = document.getElementById('pass');
+			let errUser  = document.getElementById('errorUser');
+			let errPass  = document.getElementById('errorPass');
+
+			let valUser = username.value;
+			let valPass = password.value;
+
+			let checkUser = '';
+			let checkPass = '';
+
+			if(valUser == ''){
+				checkUser = false;
+				// hien thi thong bao loi vao the p
+				errUser.innerHTML = 'Vui long nhap username';
+				// tao css duong vien mau do cho the input
+				username.style.border = '1px solid red';
+			} else {
+				checkUser = true;
+				// xoa loi o the p
+				errUser.innerHTML = '';
+				// bo vien mau do cua the input
+				username.style.border = '';
+			}
+
+			// lam tuong tu cho password
+			
+			// xong het viec kiem tra
+			if(checkUser && checkPass){
+				window.location.href = 'home.html';
+			}
+			return false; // dung chuong trinh
+		}
+	</script>
+</body>
+</html>
