@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Demo JQ</title>
+</head>
+<body>
+	<input type="text" name="user">
+	<br><br>
+	<input type="text" class="letter_1">
+	<input type="text" class="letter_2">
+	<input type="text" class="letter_3">
+	<br><br>
+	<h1 id="time"> 0 </h1>
+	<button class="start">Start Time</button>
+	<button class="stop">Stop</button>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// xu ly time
+			let myTime = 0;
+			let runTime;
+			$('.start').click(function(){
+				// goi ham setinterval
+	
+				runTime = setInterval(function(){
+					// thuc hien hanh dong theo chu ky lap 
+					// thuc hien mai mai ko dung
+					myTime += 1;
+					$('#time').html(myTime);
+
+				}, 1000);
+			});
+
+			$('.stop').click(function(){
+				// xoa hanh dong dc tao ra boi setInterval 
+				clearInterval(runTime);
+			});
+
+
+			$('input[name=user]').keydown(function(e){
+				//console.log(e);
+				console.log(`nguoi dung vua bam phim co ma js-code la ${e.which}`);
+				let data = $(this).val().trim();
+				if(e.which == 13){
+					// nguoi dung bam nut enter
+					alert(data);
+				}
+			});
+
+			// khoa 2 input letter_2 va letter_3 : ko cho nhap gi vao
+			$('.letter_2').attr('disabled', 'disabled');
+			$('.letter_3').attr('disabled', 'disabled');
+			let chk1 = null;
+			let chk2 = null;
+
+			// bat su kien nguoi dung nhap vao otext 1
+			$('.letter_1').keydown(function(e) {
+				if(e.which == 65){
+					// nguoi dung nhap dung ky tu a
+					// mo ra
+					$('.letter_2').attr('disabled', false);
+					chk1 = true;
+				} else {
+					// khoa lai
+					$('.letter_2').attr('disabled', 'disabled');
+					// xoa bo noi dung cua input lettet 2
+					$('.letter_2').val('');
+					chk1 = false;
+				}
+			});
+
+			// bat su kien nguoi dung nhap vao otext 2
+			//console.log(chk1);
+			$('.letter_2').keydown(function(e) {
+				if(e.which == 66){
+					$('.letter_3').attr('disabled', false);
+					chk2 = true;
+				} else {
+					// khoa lai
+					$('.letter_3').attr('disabled', 'disabled');
+					// xoa bo noi dung cua input lettet 2
+					$('.letter_3').val('');
+					chk2 = false;
+				}
+			});
+		});
+	</script>
+</body>
+</html>
